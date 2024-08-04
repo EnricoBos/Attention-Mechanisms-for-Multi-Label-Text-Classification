@@ -5,16 +5,16 @@
 
 
 ## Environment
-* ** Python 3.10.10 **
-* ** Tensorflow V.2.10.0 **
+* Python 3.10.10 
+* Tensorflow V.2.10.0 
 
 ## Implementation
 * Implemented models for multi label text classification including:
-	- ** bidirectional lstm with no attention mechanism**
-	- ** bidirectional lstm with simple dot attention mechanism**
-	- ** bidirectional lstm with bahdanau (additive) attention mechanism**
-	- ** bidirectional lstm with single head attention mechanism**
-	- ** bidirectional lstm with multi head attention mechanism**
+	-  bidirectional lstm with no attention mechanism
+	-  bidirectional lstm with simple dot attention mechanism
+	-  bidirectional lstm with bahdanau (additive) attention mechanism
+	-  bidirectional lstm with single head attention mechanism
+	-  bidirectional lstm with multi head attention mechanism
 
 
 
