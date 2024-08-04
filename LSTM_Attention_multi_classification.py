@@ -67,14 +67,23 @@ EMBEDDING_FILE =  'glove.840B.300d.txt' ## load this from glove site
 
 ################################################################################
 
-# Learning Rate Scheduler
+# Learning Rate Scheduler ###
 def lr_schedule(epoch, lr):
     if epoch < 2:
         return lr
     else:
         return lr * tf.math.exp(-0.1)  # Reduce the learning rate
+# 'Clean' Sentences #### 
+def preprocess_text(sen):
+    # Remove punctuations and numbers
+    sentence = re.sub('[^a-zA-Z]', ' ', sen)
+    # Single character removal
+    sentence = re.sub(r"\s+[a-zA-Z]\s+", ' ', sentence)
+    # Removing multiple spaces
+    sentence = re.sub(r'\s+', ' ', sentence)
+    return sentence
 
-###############################################################################
+### Attention classes #########################################################
 #### this is a simple dot implementation of Attention #########################
 class Simple_DotProductAttention(Layer):
     def __init__(self, return_sequences=True, **kwargs):
@@ -142,9 +151,7 @@ class Simple_DotProductAttention(Layer):
         })
         return config
 ###############################################################################
-
-
-
+### Additive Attention Implementation
 class BahdanauAttention(Layer):
     def __init__(self, return_sequences=True, **kwargs):
         super(BahdanauAttention, self).__init__(**kwargs)
@@ -219,7 +226,8 @@ class BahdanauAttention(Layer):
         })
         return config
 
-###Attention class with query , key, value (transformar approach)
+### Attention class with query , key, value (transformar approach)
+### Single Head
 class single_head_Attention(Layer):
     def __init__(self,return_sequences=True, **kwargs ):
         super(single_head_Attention, self).__init__(**kwargs) ##
@@ -322,6 +330,7 @@ class multi_Head_Attention(Layer):
         return config
 
 ###############################################################################
+### Model Definition ##########################################################
 def build_model(maxlen, vocab_size, embedding_size, embedding_matrix, target_count,model_type):
     if(model_type == 'no_attention'):
         print('no attention enabled')
@@ -488,17 +497,6 @@ def build_model(maxlen, vocab_size, embedding_size, embedding_matrix, target_cou
         model = Model(inputs=input_words, outputs=pred)
     
     return model
-
-
-def preprocess_text(sen):
-    # Remove punctuations and numbers
-    sentence = re.sub('[^a-zA-Z]', ' ', sen)
-    # Single character removal
-    sentence = re.sub(r"\s+[a-zA-Z]\s+", ' ', sentence)
-    # Removing multiple spaces
-    sentence = re.sub(r'\s+', ' ', sentence)
-    return sentence
-
 
 ###############################################################################
 
