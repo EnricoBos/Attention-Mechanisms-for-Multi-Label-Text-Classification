@@ -16,7 +16,7 @@
 	- ** bidirectional lstm with single head attention mechanism**
 	- ** bidirectional lstm with multi head attention mechanism**
 
-)*
+
 
 
 ## Executing program
@@ -24,6 +24,9 @@
 * To evaluate the model's performance and save the confusion matrix as a PNG, set var choice = 'eval_performance'.
 
 ## Confusion matrix generated using multi-head attention
+
+![multi_h_attention_confusion_matrix_percentages](https://github.com/user-attachments/assets/456baec8-5e8e-42d8-be12-f79c03680086)
+
 
 ## Authors
 
