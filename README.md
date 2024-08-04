@@ -5,8 +5,8 @@
 
 
 ## Environment
-* **< Python 3.10.10 >**
-* **< Tensorflow V.2.10.0 >**
+* ** Python 3.10.10 **
+* ** Tensorflow V.2.10.0 **
 
 ## Implementation
 * Implemented models for multi label text classification including:
