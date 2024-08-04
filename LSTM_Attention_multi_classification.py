@@ -5,7 +5,6 @@ Created on Fri Jul 19 13:51:26 2024
 @author: eboscolo
 """
 
-#https://www.kaggle.com/code/rahulvks/lstm-attention-keras/notebook
 
 #import os
 import re
