@@ -1,7 +1,6 @@
 # TensorFlow Multi-Label Text Classification with Attention Mechanisms on Toxic Comment Dataset
 
-* This project implements and compares multiple models for multi-label text classification using various attention mechanisms in TensorFlow.
- The comparison is based on the 'Toxic Comment Classification' dataset, which contains six classes. Each comment can belong to one or more classes.
+* This project implements and compares multiple models for multi-label text classification using various attention mechanisms in TensorFlow. The comparison is based on the 'Toxic Comment Classification' dataset, which contains six classes. Each comment can belong to one or more classes. The Toxic Comment Classification dataset can be downloaded from Kaggle.
 
 
 ## Environment
