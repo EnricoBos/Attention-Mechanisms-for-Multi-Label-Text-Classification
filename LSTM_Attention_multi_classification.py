@@ -388,7 +388,7 @@ def build_model(maxlen, vocab_size, embedding_size, embedding_matrix, target_cou
         # Apply Dropout
         x = Dropout(0.2)(x)
         # Output layer with softmax activation
-        pred = Dense(target_count, activation='sigmoid')(x) ## calc with softmax 
+        pred = Dense(target_count, activation='sigmoid')(x) ## calc with sigm. (softmax?)  
         # Define and compile the model
         model = Model(inputs=input_words, outputs=pred)
 
@@ -422,7 +422,7 @@ def build_model(maxlen, vocab_size, embedding_size, embedding_matrix, target_cou
         # Apply Dropout
         x = Dropout(0.2)(x)
         # Output layer with softmax activation
-        pred = Dense(target_count, activation='sigmoid')(x) ## calc with softmax 
+        pred = Dense(target_count, activation='sigmoid')(x) ## calc with sigm. (softmax?)  
         # Define and compile the model
         model = Model(inputs=input_words, outputs=pred)
         
@@ -456,7 +456,7 @@ def build_model(maxlen, vocab_size, embedding_size, embedding_matrix, target_cou
         # Apply Dropout
         x = Dropout(0.2)(x)
         # Output layer with softmax activation
-        pred = Dense(target_count, activation='sigmoid')(x) ## calc with softmax 
+        pred = Dense(target_count, activation='sigmoid')(x) ## calc with sigm. (softmax?) 
         # Define and compile the model
         model = Model(inputs=input_words, outputs=pred)
     
@@ -491,7 +491,7 @@ def build_model(maxlen, vocab_size, embedding_size, embedding_matrix, target_cou
         # Apply Dropout
         x = Dropout(0.2)(x)
         # Output layer with softmax activation
-        pred = Dense(target_count, activation='sigmoid')(x) ## calc with softmax 
+        pred = Dense(target_count, activation='sigmoid')(x) ## calc with sigm. (softmax?) 
         # Define and compile the model
         model = Model(inputs=input_words, outputs=pred)
     
