@@ -19,7 +19,7 @@
 
 
 ## Executing program
-* To train a model, set the variable `choice = 'enable_train'` and `model_type = '...'` with the desired attention mechanism (for example, to use multi-head attention, set `model_type = 'multi_head_attention'`). The trained model will be saved in the specified folder. Below an example:
+* To train a model, set the variable `choice = 'enable_train'` and `model_type = '...'` with the desired attention mechanism (for example, to use multi-head attention, set `model_type = 'multi_head_attention'`). The trained model will be saved in the specified folder.
 	```python
   choice = 'enable_train'
   model_type = 'multi_head_attention'
