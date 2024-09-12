@@ -19,8 +19,15 @@
 
 
 ## Executing program
-* To train a model, set var choice = 'enable_train' and model_type = '...' with the desired attention mechanism (For example, to use multi-head attention, set model_type = 'multi_head_attention'). The trained model will be saved in the specified folder.
+* To train a model, set the variable `choice = 'enable_train'` and `model_type = '...'` with the desired attention mechanism (for example, to use multi-head attention, set `model_type = 'multi_head_attention'`). The trained model will be saved in the specified folder. Below an example:
+	```python
+  choice = 'enable_train'
+  model_type = 'multi_head_attention'
+ 
 * To evaluate the model's performance and save the confusion matrix as a PNG, set var choice = 'eval_performance'.
+  	```python
+  choice = 'eval_performance'
+  model_type = 'multi_head_attention'
 
 ## Confusion matrix generated using multi-head attention
 
