@@ -234,14 +234,6 @@ class LuongAttentionForClassification(Layer):
             name='query_vector'
         )
         
-        # Optionally, you can define the context vector
-        # self.Wc = self.add_weight(
-        #     shape=(self.embedding_dim,),  # Shape is [embedding_dim]
-        #     initializer='glorot_uniform',
-        #     trainable=True,
-        #     name='context_vector'
-        # )
-        
     def call(self, inputs):
         # inputs: [N, SL, E] (batch size, sequence length, embedding dimension)
         
