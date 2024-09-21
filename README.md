@@ -12,6 +12,7 @@
 	-  bidirectional lstm with no attention mechanism
 	-  bidirectional lstm with simple dot attention mechanism
 	-  bidirectional lstm with bahdanau (additive) attention mechanism
+        -  bidirectional lstm with luong attention mechanism
 	-  bidirectional lstm with single head attention mechanism
 	-  bidirectional lstm with multi head attention mechanism
 
